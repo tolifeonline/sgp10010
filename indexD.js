@@ -23,6 +23,7 @@
 	reviewB2:"Provide caregiver with mobile aids to support patient.",
 	reviewC2:"Luggage makes it easy to transport.",
 	reviewD2:"Can be abit heavy.",
+		
 	reviewPdt3:"Easy Go Chair",
 	reviewPr3:"SGD $400",
 	reviewImg3:"http://common1.csnimages.com/lf/49/hash/7858/2868610/1/1.jpg",
@@ -42,11 +43,13 @@
 	insightUrl1:"insights/article1.html",
 	insightTag1:"Caregiving, Singapore",
 	insightP1:"I have seen my-then-boyfriend-now-husband, Eric care for his father with dementia and he would not have been able to balance his career and caregiving responsibilities without the support of our...",
+	
 	insightTitle2:"What Does Dementia Mean To You?",
 	insightImg2:"https://projectweforgot.com/wp-content/uploads/2017/09/Screen-Shot-2017-09-13-at-10.09.25-PM-600x403.jpg",
 	insightUrl2:"index.html#insights",
 	insightTag2:"Caregiver, Wellbeing",
 	insightP2:"'Words and sentences do not tell us meanings by themselves; it's us who draw meanings from words and sentences.' Here is a collection of voices from our community and what...",
+	
 	insightTitle3:"Facing Dementia with Mum and Many Other Caregivers",
 	insightImg3:"https://projectweforgot.com/wp-content/uploads/2017/10/Galen-Yeo_w_Mum-600x403.jpg",
 	insightUrl3:"index.html#insights",
