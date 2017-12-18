@@ -35,7 +35,7 @@
 	}
 	
 	
-	var lastEntryInsightno2 = 3;
+	var lastEntryInsightno = 3;
 
 	var reviewStore2 = {
 	insightTitle1:"The Unsung Hero in Our Journey of Caring: Our Foreign Domestic Worker",
