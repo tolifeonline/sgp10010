@@ -5,7 +5,7 @@
   
   
 	 <!-- update src version number  (ie. ?v=10) on changes to indexD.js/indexD2.js -->
-	<script type="text/javascript" src="data/indexD.js?v=13" id="dataScript"></script>
+	<script type="text/javascript" src="data/indexD.js?v=14" id="dataScript"></script>
 	<!---------------------------------------------------->
   
 	<meta charset="utf-8">
@@ -215,7 +215,7 @@
 	 var allInsightsDiv = "<div class='insightsDiv' id='insightsDiv-1'></div>";
 		
 	  
-		for (j = 2; j < lastEntryno2 + 1; j++) {
+		for (j = 2; j < lastEntryInsightno + 1; j++) {
 		
 		allInsightsDiv += "<div class='insightsDiv' id='insightsDiv-" + j + "'></div>";
 		
@@ -237,7 +237,7 @@
 	  
 		var allPdtsDiv = "<div class='productsDiv' id='productsDiv-1'></div>";
 	  
-		for (i = 2; i < lastEntryno + 1; i++) {
+		for (i = 2; i < lastEntryPdtno + 1; i++) {
 		
 		allPdtsDiv += "<div class='productsDiv' id='productsDiv-" + i + "'></div>";
 		
@@ -273,7 +273,7 @@
 	function myFunction() {
 		
 		
-		for (i = 1; i < lastEntryno + 1; i++) {
+		for (i = 1; i < lastEntryPdtno + 1; i++) {
 		
 				
 		document.getElementById("productsDiv-" + i).innerHTML = "<p class='imgP'><a href='" + reviewStore["reviewUrl" + i] +"' class='productsLink'><img class='productsIMG' src='" + reviewStore["reviewImg" + i] +"' ></a></p><p class='productsH'><a href='" + reviewStore["reviewUrl" + i] +"' class='productsLink'>" + reviewStore["reviewPdt" + i] + "</a></p><p class='productsRating'></p><p class='productsPrice'>" + reviewStore["reviewPr" + i] +" </p><p class='productsReviewBtn' id='f" + i + "' onclick='showReview(this.id)'>Featured review</p><div class='fReviews' id='fReviews-f" + i + "'></div>"
@@ -290,10 +290,10 @@
 		}
 		
 		
-		for (j = 1; j < lastEntryno2 + 1; j++) {
+		for (j = 1; j < lastEntryInsightno + 1; j++) {
 		
 				
-		document.getElementById("insightsDiv-" + j).innerHTML = "<img class='insightsIMG' src='" + reviewStore2["insightImg" + j] + "' width='100%'><a href='" + reviewStore2["insightUrl" + j] + "' class='insightsLink'><p class='insightsH'>" + reviewStore2["insightTitle" + j] + "</p></a><p class='insightsTag'>" + reviewStore2["insightTag" + j] + "</p><p class='insightsP'>" + reviewStore2["insightP" + j] + "</p>"
+		document.getElementById("insightsDiv-" + j).innerHTML = "<img class='insightsIMG' src='" + insightStore["insightImg" + j] + "' width='100%'><a href='" + insightStore["insightUrl" + j] + "' class='insightsLink'><p class='insightsH'>" + insightStore["insightTitle" + j] + "</p></a><p class='insightsTag'>" + insightStore["insightTag" + j] + "</p><p class='insightsP'>" + insightStore["insightP" + j] + "</p>"
 		
 		}
 				

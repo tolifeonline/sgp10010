@@ -23,7 +23,7 @@
 	reviewB2:"Provide caregiver with mobile aids to support patient.",
 	reviewC2:"Luggage makes it easy to transport.",
 	reviewD2:"Can be abit heavy.",
-		
+	
 	reviewPdt3:"Easy Go Chair",
 	reviewPr3:"SGD $400",
 	reviewImg3:"http://common1.csnimages.com/lf/49/hash/7858/2868610/1/1.jpg",
@@ -37,7 +37,7 @@
 	
 	var lastEntryInsightno = 3;
 
-	var reviewStore2 = {
+	var insightStore = {
 	insightTitle1:"The Unsung Hero in Our Journey of Caring: Our Foreign Domestic Worker",
 	insightImg1:"https://projectweforgot.com/wp-content/uploads/2017/11/6982826082_02efb78d5e_k-600x403.jpg",
 	insightUrl1:"insights/article1.html",
