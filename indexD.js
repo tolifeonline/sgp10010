@@ -1,5 +1,5 @@
 
-	var lastEntryno = 3;
+	var lastEntryPdtno = 3;
 
 	var reviewStore = {
 	reviewPdt1:"Aluminium Lightweight Detachable Push Chair",
@@ -35,7 +35,7 @@
 	}
 	
 	
-	var lastEntryno2 = 3;
+	var lastEntryInsightno2 = 3;
 
 	var reviewStore2 = {
 	insightTitle1:"The Unsung Hero in Our Journey of Caring: Our Foreign Domestic Worker",
