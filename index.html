@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+  
+	 <!-- update src version number  (ie. ?v=10) on changes to indexD.js/indexD2.js -->
+	<script type="text/javascript" src="data/indexD.js?v=14" id="dataScript"></script>
+	<!---------------------------------------------------->
+  
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>careWOM - The smart way to providing care.</title>
+
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="css/half-slider.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<style>
+	body{font-family: helvetica;}
+	
+	h1{color: orange;}
+	
+	h2{color: orange;}
+	
+	h3 {font-size: 2.3em;}
+	
+	.carousel-caption {color: orange; padding-bottom:65px;}
+	
+	.carousel-caption p{font-weight: 300;}
+	
+	.carousel-item {min-height:500px;}
+	
+	.containerBelow {font-weight: 300; margin-top: 30px;}
+	
+	.py-5 {height: auto; padding-bottom:70px; overflow:auto;}
+	
+	#about p{font-size: 1.5em; color:#42413d; text-shadow: 0.1px 0.1px orange;}
+	
+	.boldF{font-weight: bold;}
+	
+	.insightsWrapper{padding-bottom:50px; min-height:550px;padding:8%; padding-top:1%;}
+	
+	.insightsDiv {width: 32%;margin-left: 1%; float: left; margin-bottom: 70px;}
+	
+	.insightsH{color:orange; font-weight: normal; font-size: 1.1em; margin-top: 15px;}
+	
+	.insightsTag{font-size: 0.8em; font-weight: 200; color: orange;}
+	
+	.insightsP{color: lightgray; font-weight: 300; font-size 0.9em;}
+	
+	.insightsLink{text-decoration: none !important;}
+	
+	.productsWrapper{height:auto;padding:8%; padding-top:2%; }
+	
+	.productsDiv{width: 28%;margin-left: 5%; float: left;  border: 1px solid lightgray; padding: 20px; box-shadow: 5px 10px lightgray; border-radius: 7px; margin-bottom:80px; min-height: 480px;}
+	
+	.productsH{color: #42413d; text-align: center; font-weight: 500; font-size: 1.2em; min-height: 100px;}
+	
+	.productsIMG{height: 200px;margin:0 auto;}	
+	
+	.productsLink {text-decoration: none !important; color: #42413d;}
+	
+	a.productsLink:hover {
+    color: orange;
+	}
+	
+	.imgP{text-align: center; border-bottom: 1px solid gray; padding-bottom:20px; width:90%; margin: 0 auto; margin-bottom: 20px;}
+	
+	.productsPrice{text-align: center; color: gray; font-weight: normal;}
+	
+	.fr-pHeader{color: gray; font-size: 2em;}
+	
+	.productsReviewBtn {background-color: #42413d; margin: 0 auto; color: orange; text-align: center; padding:10px; border-radius: 5px; width: 170px; font-family: helvetica; font-size: 0.8em; cursor: pointer;}
+	
+	.qnBody{color: orange;}
+	
+	.rQn {color: lightgray;}
+	
+	.fReviews {position: fixed; z-index:500; width: 90%; left:5%; top:100px; background-color:#42413d; opacity: 0.95; padding: 30px; display: none; }
+	
+	.closeReviewBtn {text-align: right; color: gray; margin-top: 70px; cursor: pointer;}
+	
+	@media only screen and (max-device-width: 480px) {
+	
+	h3 {font-size: 2em;}
+	
+	.py-5 {height: auto; padding-bottom:70px; overflow:auto;}
+	
+	.carousel-caption {padding-bottom:80px;}
+	
+	#about p{font-size: 1.2em;}
+	
+	.insightsWrapper{min-height:1650px;padding:2%; padding-top:1%; margin-top: -70px;}
+	
+	.insightsDiv {width: 94%;margin-left: 3%; float: left; margin-top: 90px; margin-bottom: 0px;}
+	
+	#insightsDivOne {margin-top: 20px;}
+
+	.productsWrapper{min-height:1650px;padding:2%; padding-top:0%; margin-bottom:50px;margin-top:-40px;}	
+	
+	.productsDiv {width: 94%;margin-left: 3%; float: left; margin-top: 60px; margin-bottom:30px;}
+	
+	.fr-pHeader {font-size: 1.2em;}
+	
+	.qnBody {font-size: 0.9em;}
+	
+	.fReviews {padding-bottom:15px;}
+	
+	}
+	
+	</style>
+
+  </head>
+
+  <body onload="myFunction()">
+  
+	 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #42413d; border-bottom: 1px solid #525252;">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: orange;">careWOM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home
+               </a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#about">About
+			   </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#insights">Insights
+			  </a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#products">Products
+			  </a>
+            </li>
+		  </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+         
+          <div class="carousel-item active" style="background-image: url('css/cover1b.jpg'); ">
+            <a href="#about"><div class="carousel-caption d-md-block" >
+              <h3>Introducing careWOM</h3>
+              <p>Caregiving the smart way<br>for busy people.</p>
+            </div></a>
+          </div>
+         
+          <div class="carousel-item" style="background-image: url('css/cover2a.jpg')">
+            <a href="#insights"><div class="carousel-caption d-md-block">
+              <h3>Discover caregiver insights</h3>
+              <p>Learn caregiving insights<br> and be more effective.</p>
+            </div></a>
+          </div>
+          
+          <div class="carousel-item" style="background-image: url('css/cover3a.jpg')">
+            <a href="#products"><div class="carousel-caption d-md-block">
+              <h3>Find validated products</h3>
+              <p>Get the right caregiving tools<br>by reading authentic user reviews.</p>
+            </div></a>
+          </div>
+        </div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+   
+    <section id="about" class="py-5">
+      <div class="container containerBelow" >
+        <h1 style="font-weight: 400; color:orange;margin-bottom: 20px;  text-shadow: 0.3px 0.3px #42413d;">careWOM - The smart way to providing care.</h1>
+        <p><span class="boldF">Introducing careWOM - </span><br>Caregiving the smart way for busy people.</p>
+		<p><span class="boldF">Discover insights for caregivers - </span><br>Learn caregiving insights and be more effective.</p>
+		<p><span class="boldF">Find validated products - </span><br>Get the right caregiving tools by reading authentic user reviews.</p>
+		<p style="margin-top: 70px;"><img class="insightsIMG" src="css/carewomlogo.PNG"></p>
+      </div>
+    </section>
+	
+		
+	<section id="insights" class="py-5" style="background-color: #42413d;">
+      <div class="container containerBelow" >
+        <h2><font color="lightgray">Insights</font></h2>
+        <p style="color:lightgray; font-style: italic; font-size:1.1em;";>Discover insights for caregivers - Learn caregiving insights and be more effective.</p>
+	  </div>
+	  <div class="insightsWrapper" id="insightsWrapper1">
+	  </div>
+	 <script>
+	 var allInsightsDiv = "<div class='insightsDiv' id='insightsDiv-1'></div>";
+		
+	  
+		for (j = 2; j < lastEntryInsightno + 1; j++) {
+		
+		allInsightsDiv += "<div class='insightsDiv' id='insightsDiv-" + j + "'></div>";
+		
+		}
+		
+		document.getElementById("insightsWrapper1").innerHTML = allInsightsDiv;
+	 </script>
+	 
+    </section>
+	
+	<section id="products" class="py-5">
+      <div class="container containerBelow">
+        <h2><font color="#42413d">Products</font></h2>
+        <p style="color:#42413d; font-style: italic; font-size:1.1em;";>Find validated products - Get the right caregiving tools by reading authentic user reviews.</p>
+      </div>
+	  <div class="productsWrapper" id="wrapper1">	  
+	  </div>
+	  <script>
+	  
+		var allPdtsDiv = "<div class='productsDiv' id='productsDiv-1'></div>";
+	  
+		for (i = 2; i < lastEntryPdtno + 1; i++) {
+		
+		allPdtsDiv += "<div class='productsDiv' id='productsDiv-" + i + "'></div>";
+		
+		}
+		
+		document.getElementById("wrapper1").innerHTML = allPdtsDiv;
+		
+		
+		function showReview(idReview) {
+		document.getElementById("fReviews-"+ idReview).style.display = "block";
+		}
+		
+		function closeReview() {
+		$(".fReviews").css({"display":"none"});
+		}
+	  </script>
+    </section>
+	
+	
+
+    
+    <footer class="py-5" style="background-color:#42413d; min-height: 150px;">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; <font color="orange">careWOM</font> 2017</p>
+      </div>
+    
+    </footer>
+
+  
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script>
+	function myFunction() {
+		
+		
+		for (i = 1; i < lastEntryPdtno + 1; i++) {
+		
+				
+		document.getElementById("productsDiv-" + i).innerHTML = "<p class='imgP'><a href='" + reviewStore["reviewUrl" + i] +"' class='productsLink'><img class='productsIMG' src='" + reviewStore["reviewImg" + i] +"' ></a></p><p class='productsH'><a href='" + reviewStore["reviewUrl" + i] +"' class='productsLink'>" + reviewStore["reviewPdt" + i] + "</a></p><p class='productsRating'></p><p class='productsPrice'>" + reviewStore["reviewPr" + i] +" </p><p class='productsReviewBtn' id='f" + i + "' onclick='showReview(this.id)'>Featured review</p><div class='fReviews' id='fReviews-f" + i + "'></div>"
+		
+		document.getElementById("fReviews-f" + i).innerHTML = "<p class='fr-pHeader' id='Ritem-H" + i + "'></p><p class='qnBody'><span class='rQn' >Caregiving challenge:</span><br><span class='rAns' id='Ritem-a" + i +"'></span></p><p class='qnBody'><span class='rQn'>How product solved challenge:</span><br><span class='rAns' id='Ritem-b" + i +"'></span></p><p class='qnBody'><span class='rQn'>Liked featured:</span><br><span class='rAns' id='Ritem-c" + i +"'></span></p><p class='qnBody'><span class='rQn'>Disliked features:</span><br><span class='rAns' id='Ritem-d" + i + "'></span></p><p class='closeReviewBtn' onclick='closeReview()'>close</p>";
+		
+		
+		document.getElementById("Ritem-H" + i).innerHTML = reviewStore["reviewPdt" + i];
+		document.getElementById("Ritem-a" + i).innerHTML = reviewStore["reviewA" + i];
+		document.getElementById("Ritem-b" + i).innerHTML = reviewStore["reviewB" + i];
+		document.getElementById("Ritem-c" + i).innerHTML = reviewStore["reviewC" + i];
+		document.getElementById("Ritem-d" + i).innerHTML = reviewStore["reviewD" + i];				
+		
+		}
+		
+		
+		for (j = 1; j < lastEntryInsightno + 1; j++) {
+		
+				
+		document.getElementById("insightsDiv-" + j).innerHTML = "<img class='insightsIMG' src='" + insightStore["insightImg" + j] + "' width='100%'><a href='" + insightStore["insightUrl" + j] + "' class='insightsLink'><p class='insightsH'>" + insightStore["insightTitle" + j] + "</p></a><p class='insightsTag'>" + insightStore["insightTag" + j] + "</p><p class='insightsP'>" + insightStore["insightP" + j] + "</p>"
+		
+		}
+				
+	}
+	
+  </script>
+  
+  
+  
+  </body>
+
+</html>
