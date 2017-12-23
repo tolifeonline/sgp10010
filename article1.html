@@ -43,27 +43,38 @@
 	
 	.insightsDivA {width: 80%;margin-left: 10%; }
 	
-	.insightsTag{font-size: 0.8em; font-weight: 500; color:  #42413d;;}
+	.insightsTag{font-size: 0.8em; font-weight: 500; color:  #42413d;}
 	
 	.insightsP{color: #42413d; font-weight: 400; font-size 1em; margin-top:35px; line-height: 1.5em;}
 	
 	#products {margin-top: -120px;}
 	
-	.productsWrapperA{padding-bottom:50px; min-height:550px;padding:8%; padding-top:1%;}
+	#insightsPdtH{margin-bottom: 35px;}
 	
-	.productsDivA {width: 80%;margin-left: 10%; background-color: #42413d; padding:30px; padding-bottom: 50px; border-radius:7px;}
+	.productsWrapperA{padding-bottom:50px; padding:8%; padding-top:1%;}
 	
-	.productsDivA img{margin-left: 5%;height: 120px; opacity: 0.5;}
+	.productsDivA {width: 80%;margin-left: 10%; background-color: #42413d; padding:50px 30px; border-radius:7px; height: auto; overflow: auto; position: relative;}
 	
-	.productsIMG:hover {
-    opacity: 1;
-	}
+	.pdtDiv {width: 200px; float: left; position: relative; display: inline-block;}
+	
+	.pdtDiv span{position: relative; width: 200px; display: inline-block; margin: 0 px; text-align: center;}
+	
+	.productsDivA img{margin: 0 auto;height: 120px; opacity: 0.7;}
+	
+	.pdtlinkSpan{height:60px;}
+	
+	.pdtlinkSpan a{color: white; text-decoration: none; background-color: orange; padding:10px 15px; border-radius: 5px;}
+	
+	.pdtslinkName {padding: 15px 30px;color: lightgray; background-color: #42413d; opacity: 0; height:60px; font-size: 0.8em;}
+	
+	.pdtDiv:hover .pdtslinkName { opacity: 1; }
+	.pdtDiv:hover .productsIMG{ opacity: 1; }
 	
 	.productsTag{font-size: 0.8em; font-weight: 500; color:  #42413d;;}
 	
 	.productsP{color: #42413d; font-weight: 400; font-size 1em; margin-top:35px; line-height: 1.5em;}
 	
-	
+	#insightComments{background-color: lightgray; padding:15%; padding-top: 30px;}
 	
 	@media only screen and (max-device-width: 480px) {
 	
@@ -79,17 +90,23 @@
 	
 	.insightsP{font-weight: 300;}
 	
-	#insightsDivOne {margin-top: 20px;}
+	#insightsDivOne {margin-top: 0px;}
 	
 	#products {margin-top: -80px;}
 	
-	.productsWrapperA{height:auto;padding:2%; padding-top:1%;}
+	.productsWrapperA{padding:2%; padding-top:1%; padding-bottom: 0px;}
 	
 	.productsP{font-weight: 300;}
 	
-	#productsDivOne {margin-top: 20px;}	
+	#productsDivOne {margin-top: 20px;}
+
+	.productsDivA {padding-bottom: 10px;}
 	
-	.productsDivA img{margin-left: 5%; height: 70px; opacity: 0.5; margin-bottom: 20px;}
+	.productsDivA img{margin: 0 auto; width: 50%; height: auto; opacity: 0.5; margin-bottom: 0px;}
+	
+	.pdtDiv {margin-left: 4%;;margin-bottom: 50px;}
+	
+	#insightComments{padding:5%; padding-top: 30px;}
 	
 	}
 	
@@ -147,7 +164,7 @@
     <section id="insights" class="py-5" style="background-color: white;">
       <div class="insightsWrapperA" >
 	  <div class="insightsDivA" id="insightsDivOne">
-	  <img class="insightsIMG" src="https://projectweforgot.com/wp-content/uploads/2017/11/6982826082_02efb78d5e_k-600x403.jpg" width="100%">
+	  <img class="insightsIMG" src="../css/artc1.jpg" width="100%">
 	  <p class="insightsTag"></p>
 	  <p class="insightsP"><span class="boldF">Network of caregivers within the household</span></p>
 	  <p class="insightsP">Eric, my then-boyfriend-now-husband, was 24 years old when his father was diagnosed with vascular dementia. When the responsibility of caring for his father fell on his shoulders, he had to learn fast how to juggle his final year thesis project, which required substantial time in the laboratory, and his caring duties.<br><br>His father’s condition was unpredictable – I would often hear Eric talk about having sleepless nights from his father’s restlessness throughout the night due to the sundown syndrome.<br><br>For someone who was accustomed to sleeping before midnight, sleep deprivation was a drastic lifestyle change he had to cope with.
@@ -167,14 +184,25 @@
       <div class="productsWrapperA" >
 	  <div class="productsDivA" id="insightsDivOne" >
 	  <p id="insightsPdtH" style="color: orange; margin-left: 5%;">Explore related product solutions</p>
-	  <a href="../products/product1.html" ><img class="productsIMG" src="http://lifeline.com.my/wp-content/uploads/2016/08/65-0900-Easy-Go-Chair-with-Luggage2.jpg" ></a>
-	  <img class="productsIMG" src="https://www.lifeline.com.sg/wp-content/uploads/2015/07/07093.jpg" >
-	  <img class="productsIMG" src="http://common1.csnimages.com/lf/49/hash/7858/2868610/1/1.jpg" >
+	  <div class="pdtDiv" >
+	  <span><img class="productsIMG" src="../css/pdt1.jpg" ></span>
+	  <span class="pdtlinkSpan"><p class="pdtslinkName">Aluminium Lightweight Detachable Push Chair<br><br><font color="orange"><a href="../products/product1.html" >Learn more</a></font></p></span>
+	  </div>
+	  <div class="pdtDiv" >
+	  <span>
+	  <img class="productsIMG" src="../css/pdt2.jpg" ></span>
+	  <span class="pdtlinkSpan"><p class="pdtslinkName">Easy Go Chair with Luggage<br><br><font color="orange"><a href="#" >Learn more</a></font></p></span>
+	  </div>
+	  <div class="pdtDiv" >
+	  <span>
+	  <img class="productsIMG" src="../css/pdt3.jpg" ></span>
+	  <span class="pdtlinkSpan"><p class="pdtslinkName">Easy Go Chair<br><br><font color="orange"><a href="#" >Learn more</a></font></p></span>
+	  </div>
 	  </div>  
 	  </div>
     </section>
 	
-	<section id="products" class="py-5" style="background-color: lightgray; padding:20px;">
+	<section id="insightComments" class="py-5" >
 	<div id="disqus_thread"></div>
 <script>
 
